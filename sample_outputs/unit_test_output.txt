@@ -1,0 +1,20 @@
+test_acl_matching_groups_are_unioned_then_masked (test_unix_security_auditor.SecurityModelTests.test_acl_matching_groups_are_unioned_then_masked) ... ok
+test_acl_named_user_and_mask (test_unix_security_auditor.SecurityModelTests.test_acl_named_user_and_mask) ... ok
+test_acl_named_user_match_does_not_fall_through (test_unix_security_auditor.SecurityModelTests.test_acl_named_user_match_does_not_fall_through) ... ok
+test_acl_other_entry_used_when_no_other_entry_matches (test_unix_security_auditor.SecurityModelTests.test_acl_other_entry_used_when_no_other_entry_matches) ... ok
+test_acl_owner_is_not_limited_by_mask (test_unix_security_auditor.SecurityModelTests.test_acl_owner_is_not_limited_by_mask) ... ok
+test_audit_finds_world_writable_file_and_skips_symlinks (test_unix_security_auditor.SecurityModelTests.test_audit_finds_world_writable_file_and_skips_symlinks) ... ok
+test_group_uses_group_bits (test_unix_security_auditor.SecurityModelTests.test_group_uses_group_bits) ... ok
+test_other_user_is_denied (test_unix_security_auditor.SecurityModelTests.test_other_user_is_denied) ... ok
+test_owner_uses_owner_bits (test_unix_security_auditor.SecurityModelTests.test_owner_uses_owner_bits) ... ok
+test_root_can_read_but_cannot_execute_regular_file_without_execute_bit (test_unix_security_auditor.SecurityModelTests.test_root_can_read_but_cannot_execute_regular_file_without_execute_bit) ... ok
+test_root_can_search_directory_even_without_execute_mode_bit (test_unix_security_auditor.SecurityModelTests.test_root_can_search_directory_even_without_execute_mode_bit) ... ok
+test_sha256_baseline_detects_modification (test_unix_security_auditor.SecurityModelTests.test_sha256_baseline_detects_modification) ... ok
+test_supplementary_group_is_considered (test_unix_security_auditor.SecurityModelTests.test_supplementary_group_is_considered) ... ok
+test_unsupported_platform_exits_before_unix_only_imports (test_unix_security_auditor.SecurityModelTests.test_unsupported_platform_exits_before_unix_only_imports)
+Windows and non-Unix platforms get a clear message and exit early. ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.303s
+
+OK

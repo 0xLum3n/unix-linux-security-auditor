@@ -1,0 +1,2 @@
+DELIBERATELY INSECURE SAMPLE FILE
+This fixture is intended for permission-audit demonstration only.

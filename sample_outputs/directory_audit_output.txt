@@ -1,0 +1,12 @@
+
+=== DIRECTORY PERMISSION AUDIT ===
+Scanned folder : sample_data
+[HIGH] WORLD_WRITABLE_FILE | -rw-rw-rw- sample_data/world_writable_demo.txt
+
+Summary:
+  Findings : 1
+  High     : 1
+  Medium   : 0
+  Info     : 0
+Note: SUID/SGID can be legitimate; findings require administrator review, not automatic deletion.
+JSON report saved: sample_outputs/audit_report.json

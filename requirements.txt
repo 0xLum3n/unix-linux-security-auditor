@@ -1,0 +1,2 @@
+# No third-party Python packages are required.
+# Recommended: Python 3.9 or newer on Linux/WSL Ubuntu, macOS, BSD, Solaris or AIX. Windows is not supported natively; use WSL Ubuntu.

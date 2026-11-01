@@ -1,0 +1,21 @@
+
+=== FILE INSPECTION ===
+Path            : sample_data/confidential_exam_records.txt
+Type            : regular file
+Permissions     : -rw-r----- (octal 0640)
+Owner           : root (UID 0)
+Group           : oai_shared (GID 1001)
+Size            : 212 bytes
+Current process : real UID=0, real GID=0, groups=[0]
+Special bits    : none
+
+Permission comparison for the current process:
+  Request         Mode-bit estimate       os.access() kernel check
+  READ           ALLOWED               ALLOWED      [MATCH]
+  WRITE          ALLOWED               ALLOWED      [MATCH]
+  EXECUTE/SEARCH DENIED                DENIED       [MATCH]
+
+ACL details    : getfacl is not installed (on Debian/Ubuntu, install the 'acl' package).
+
+Caution: os.access() is an observation, not a safe authorization gate before open().
+A real operation can still fail because of races, parent-directory permissions, ACLs, capabilities or filesystem rules.

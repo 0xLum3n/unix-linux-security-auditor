@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scanned_directory": "sample_data",
+  "generated_utc": "2026-10-31T08:23:57.694160+00:00",
+  "finding_count": 1,
+  "findings": [
+    {
+      "path": "sample_data/world_writable_demo.txt",
+      "file_type": "regular file",
+      "permissions": "-rw-rw-rw-",
+      "octal_mode": "0666",
+      "uid": 0,
+      "owner": "root",
+      "gid": 1001,
+      "group": "oai_shared",
+      "findings": [
+        "WORLD_WRITABLE_FILE"
+      ],
+      "severity": "HIGH"
+    }
+  ]
+}

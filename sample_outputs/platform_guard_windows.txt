@@ -1,0 +1,16 @@
+SIMULATED WINDOWS STARTUP CHECK
+================================
+The test sets sys.platform to win32 before executing the program. It verifies
+that the startup guard runs before POSIX-only imports or any inspection.
+
+Expected message:
+
+====================================================================
+UNSUPPORTED OPERATING SYSTEM
+This program can run only on supported Unix-like systems (Linux, macOS and BSD/Solaris/AIX).
+Detected platform: win32
+On Windows, open an Ubuntu WSL terminal and run the program there.
+No inspection, audit or simulation was started.
+====================================================================
+
+Expected process exit status: 2

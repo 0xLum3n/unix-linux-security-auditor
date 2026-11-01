@@ -1,0 +1,36 @@
+
+=== POSIX ACL POLICY SIMULATION ===
+Sample ACL: owner=rw-, owning-group=r--, named-user UID 1002=r--,
+            named-group GID 3000=-w-, mask=rw-, other=---
+
+Principal       : owner (UID 1000, GIDs [2000])
+Requested right : WRITE
+Effective rights: rw-
+Reason          : ACL owner entry: rw-
+Decision        : ACCESS GRANTED
+
+Principal       : named auditor (UID 1002, GIDs [4500])
+Requested right : READ
+Effective rights: r--
+Reason          : named-user ACL r--; effective after mask: r--
+Decision        : ACCESS GRANTED
+
+Principal       : named auditor (UID 1002, GIDs [4500])
+Requested right : WRITE
+Effective rights: r--
+Reason          : named-user ACL r--; effective after mask: r--
+Decision        : ACCESS DENIED
+
+Principal       : faculty + IT group member (UID 1003, GIDs [2000, 3000])
+Requested right : WRITE
+Effective rights: rw-
+Reason          : matching group ACL entries combine to rw-; effective after mask: rw-
+Decision        : ACCESS GRANTED
+
+Principal       : unmatched student (UID 1004, GIDs [4000])
+Requested right : READ
+Effective rights: ---
+Reason          : ACL other entry: ---
+Decision        : ACCESS DENIED
+
+Note: this is a policy simulation; it does not install ACL entries on the filesystem.

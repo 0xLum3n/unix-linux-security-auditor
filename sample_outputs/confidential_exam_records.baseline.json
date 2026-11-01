@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "target_path": "sample_data/confidential_exam_records.txt",
+  "filename": "confidential_exam_records.txt",
+  "size_bytes": 212,
+  "sha256": "06cd7e8a9e3bb6f21a033a1eedfefb1968cbc273485491ba6934a565f8ec8f4b",
+  "created_utc": "2026-10-31T08:23:58.559355+00:00"
+}

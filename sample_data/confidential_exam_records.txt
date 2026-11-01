@@ -1,0 +1,6 @@
+CASE STUDY TEST FIXTURE ONLY
+resource=confidential_exam_records
+owner_role=administrator
+intended_group=faculty
+classification=confidential
+This is synthetic sample data. It contains no real student information.

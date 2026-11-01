@@ -1,0 +1,9 @@
+Project: Unix/Linux Security Models - Case Study 23
+Files: unix_security_auditor.py, test_unix_security_auditor.py
+Features: Real file metadata inspection; os.access() current-process checks;
+classic DAC mode-bit simulation; POSIX ACL policy simulation; getfacl display;
+recursive risky-permission audit; JSON audit export; SHA-256 baselines;
+interactive menu; startup rejection of Windows/non-Unix systems before POSIX imports; 14 automated unit tests.
+Python: 3.9+
+External Python dependencies: none
+Test command: python3 -m unittest -v test_unix_security_auditor.py
